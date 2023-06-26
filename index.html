@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Player</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+  <div class="container">
+    <h1>Music Player</h1>
+    <div id="music-player">
+      <div id="song-info">
+        <h2 id="song-title"></h2>
+        <h3 id="song-artist"></h3>
+      </div>
+      <audio id="audio-player" controls></audio>
+    </div>
+    <div id="file-upload">
+      <label for="music-files" class="file-label">
+        <span class="file-icon"><i class="fas fa-upload"></i></span>
+        <span class="file-text">Choose files</span>
+      </label>
+      <input type="file" id="music-files" accept="audio/mp3" multiple>
+    </div>
+    <div id="control-bar">
+      <button id="repeat-button">
+        <i class="fas fa-redo"></i>
+      </button>
+      <button id="skip-previous-button">
+        <i class="fas fa-step-backward"></i>
+      </button>
+      <button id="play-all-button" disabled>Play All</button>
+      <button id="skip-next-button">
+        <i class="fas fa-step-forward"></i>
+      </button>
+    </div>
+    <ul id="playlist"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
